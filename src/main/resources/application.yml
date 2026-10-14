@@ -4,16 +4,16 @@ server:
 
 spring:
   application:
-    name: eShopProduct
+    name: eshopproduct
   datasource:
-    url: &db-url jdbc:postgresql://localhost:5432/eshopProduct
+    url: &db-url jdbc:postgresql://localhost:5432/eshop
     username: postgres
     password: clashofclans
     driver-class-name: org.postgresql.Driver
   flyway: # migrations only
     url: *db-url
-    user: migration_user
-    password: migration_user
+    user: eshopproduct
+    password: eshopproduct
   jpa:
     hibernate:
       ddl-auto: validate
